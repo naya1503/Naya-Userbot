@@ -101,9 +101,11 @@ async def pack_kangish(_):
         stiks.append(
             types.InputStickerSetItem(
                 document=x,
-                emoji=random.choice(["😐", "👍", "😂"])
-                if local
-                else (i.attributes[1]).alt,
+                emoji=(
+                    random.choice(["😐", "👍", "😂"])
+                    if local
+                    else (i.attributes[1]).alt
+                ),
             )
         )
     try:

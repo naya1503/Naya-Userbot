@@ -125,8 +125,7 @@ pp = pprint  # ignore: pylint
 bot = ayra = ayra_bot
 
 
-class u:
-    ...
+class u: ...
 
 
 def _parse_eval(value=None):
