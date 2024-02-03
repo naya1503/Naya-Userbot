@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Ayra - UserBot
+# Copyright (C) 2021-2022 Kynan
+#
+# This file is a part of < https://github.com/naya1503/Ayra/ >
+# PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+
+
+echo "
+            █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+            █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
+            █░░║║║╠─║─║─║║║║║╠─░░█
+            █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
+            █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+      
+
+"
+if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
+
+
+python3 app.py && \
+python3 -m Ayra

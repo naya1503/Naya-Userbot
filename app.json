@@ -1,0 +1,56 @@
+{
+    "name": "Naya UserBot",
+    "description": "Naya Userbot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
+    "logo": "https://graph.org/file/60408fea8439e6702674d.jpg",
+    "keywords": [
+        "Telethon",
+        "Pyrogram"
+    ],
+    "repository": "https://github.com/naya1503/Naya-Userbot",
+    "success_url": "https://t.me/rizzvbss",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "SESSION": {
+            "description": "Silakan isi Telethon Atau Pyrogram V2",
+            "required": true
+        },
+        "MONGO_URI": {
+            "description": "Silakan isi Mongo Db/Mongo Url . Jika Build Redis Gagal . Cara ambil nya ketik #tutor di @kynansupport.",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "Silakan isi DB_NAME. BEBAS ISI APA AJA",
+            "required": true
+        },
+        "HEROKU_API": {
+            "description": "Isi Coy Jan Dikosongin.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Isi Coy Jan Dikosongin",
+            "required": true
+        }
+    },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
